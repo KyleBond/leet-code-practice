@@ -6,10 +6,10 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
     if (len(nums) == 2):
         return [0,1]
     
-    for x in nums:
-        for y in nums:
-            if (x + y == target):
-                return [nums.index(x), nums.index(y)]
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if (nums[i] + nums[j] == target):
+                return [i, j]
 
     # newNums = [nums.index(x) for x in nums if x < target]
 

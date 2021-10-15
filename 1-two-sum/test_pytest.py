@@ -32,3 +32,24 @@ class TestClass:
         result = solution.twoSum(self,nums=sourceNumber, target=target)
         # Assert
         assert result == expectedResult
+
+    def test_same_ints(self):
+    # Arrange
+        sourceNumber = [2,2,3]
+        target = 4
+        expectedResult = [0,1]
+        # Act
+        result = solution.twoSum(self,nums=sourceNumber, target=target)
+        # Assert
+        assert result == expectedResult
+
+    def test_example_2(self):
+    # Arrange
+        sourceNumber = [3,2,4]
+        target = 6
+        expectedResult = [1,2]
+        # Act
+        result = solution.twoSum(self,nums=sourceNumber, target=target)
+        # Assert
+        assert result == expectedResult
+        
